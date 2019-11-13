@@ -1,0 +1,23 @@
+{
+  "name": "node-rabbitmq-test",
+  "version": "1.0.0",
+  "description": "Test Rabbitmq in Node.js",
+  "keywords": [
+    "node.js",
+    "rabbitmq",
+    "test"
+  ],
+  "license": "ISC",
+  "author": "Ilya Ivanov <ilyaivanov765@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "rabbitmq:start": "docker run -p 5672:5672 rabbitmq",
+    "test": "jest"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.5"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
